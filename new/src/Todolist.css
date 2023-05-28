@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+    color: yellow;
+    text-shadow: 0cqb;
+    text-decoration: wavy;
+  
+    transition: all;
+   font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+   
+   
+}
+.container{
+    background-color: grey;
+    position: absolute;
+    right: 300px;
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+   
+}     
+li{
+    list-style: none;
+
+}
+.bt1{
+    margin: 10px;
+    background-color: yellow;
+    border-radius: 7px;
+    padding: 10px;
+    border-color: white;
+}
+.bt2{
+    border-color: white;
+    margin: 10px;
+    background-color: red;
+    border-radius: 7px;
+    padding: 10px;
+}
+.input{
+    padding: 10px;
+}
