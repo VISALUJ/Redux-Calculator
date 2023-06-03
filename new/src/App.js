@@ -1,11 +1,27 @@
-import Stopwatch from "./Stopwatch";
+import React from "react"
+import Header from "./component/Head/Header"
+import Features from "./component/Features/Features"
+import Home from "./component/Hero/Home"
+import Portfolio from "./component/Portfolio/Portfolio"
+import Resume from "./component/Resume/Resume"
 
-function App() {
+import Contact from "./component/Contact/Contact"
+import Footer from "./component/Footer"
+import "./App.css"
+
+const App = () => {
   return (
-    <div className="App">
-      <Stopwatch />  
-    </div>
-  );
+    <>
+      <Header />
+      <Home />
+      <Features />
+      <Portfolio />
+      <Resume />
+      
+      <Contact />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
