@@ -6,19 +6,15 @@ import CalcButton from './components/CalcButton';
 class CalculatorComponent extends Component {
 
   componentDidMount() {
-    // Force scroll on the display
-    // I do this on mount in case reducer is already populated
+  
     this._forceScrollOnDisplay();
   }
   
   componentDidUpdate() {
-    // Force scroll on the display
-    // this function gets called on component update
+ 
     this._forceScrollOnDisplay();
   }
 
-  // Replace the operator chars add a span for styling
-  // and replace division and multiplication symbols
   _replaceChars(value) {
     value = value.join("");
     value = value.replace(/\//g, '<span class="operatorStyle">÷</span>');
@@ -29,9 +25,7 @@ class CalculatorComponent extends Component {
   }
 
   _forceScrollOnDisplay() {
-    // Force scroll on div, put a value in here
-    // instead of calculating the offset
-    // This keeps the latest numbers in display
+    
     this.refs.calculationDisplay.scrollLeft = 10000;
     this.refs.resultDisplay.scrollLeft = 10000;
   }
